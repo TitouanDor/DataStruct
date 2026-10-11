@@ -437,7 +437,7 @@ class Element{
          * Element<int> element(42);
          * std::cout << element; // 42
          */
-        friend ostream& operator<<(ostream &os, const Element& el){
+        friend std::ostream& operator<<(std::ostream &os, const Element& el){
             os  << el.value;
             return os;
         }
