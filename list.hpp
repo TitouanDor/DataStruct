@@ -32,7 +32,7 @@ class List{
          */
         void emptyListError(std::string name){
             std::cerr << PATH <<" [ERROR] : Empty list in " << name << std::endl;
-            exit(1);
+            exit(EXIT_FAILURE);
         }
 
         /**
@@ -46,7 +46,7 @@ class List{
         void outOfRangeError(std::string name, int index){
             std::cerr << PATH <<" [ERROR] : index out of range in " << name << std::endl;
             std::cerr << "\tindex : " << index << " list size : " << this->size <<std::endl;
-            exit(1);
+            exit(EXIT_FAILURE);
         }
     public:
 
