@@ -430,6 +430,17 @@ class Element{
             return *this;
         }
 
+        /*
+        * @brief Returns the value stored
+        *
+        * @return A reference to the stored value
+        *
+        * @note Since a reference is returned, the caller can read and modify the returned value
+        */
+        T& getValue(){
+            return this->value;
+        }
+
         /**
          * Outputs the value stored in an Element.
          *
